@@ -1,0 +1,1 @@
+# Talk on "Think decentralised: a future for Web data exchange with Solid" for [Ghent University Wikidata and Wikibase Workshop](https://www.wikidata.org/wiki/Wikidata:Events/UGent_Wikidata_and_Wikibase_Workshop_2019#Programme)"

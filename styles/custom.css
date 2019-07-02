@@ -24,13 +24,21 @@
 	height: 100px;
 }
 
-.slide.toc h2 {
+.slide.toc figure {
+	width: 300px; height: 300px;
+}
+
+.slide.toc figure > img {
+	width: 300px; height: 300px;
+}
+
+/* .slide.toc h2 {
 	position: absolute;
 	right: 60px;
 	top: 20px;
 	min-height: 0;
-}
-
+} */
+/* 
 .slide.toc ol {
 	margin-top: 320px;
 }
@@ -50,7 +58,7 @@
 .slide.toc ol li.current > a {
 	color: #453688;
 	font-weight: 700;
-}
+} */
 
 .conclusion {
 	margin-top: 2em;
@@ -156,6 +164,14 @@ ul.inline li {
 .slide h2 + figure.cover.margin > :first-child {
 	margin-top: 2em;
 }
+
+.slide figure.cover.width.bigmargin > :first-child {
+	width: 80%;
+}
+.slide h2 + figure.cover.bigmargin > :first-child {
+	margin-top: 2em;
+}
+
 .slide h2 + figure.cover.height.margin > :first-child,
 .slide ul + figure.cover.height.margin > :first-child {
 	height: 75%;
@@ -244,6 +260,9 @@ ins {
 
 #comunica-sparql {
 	background-color: #be1622;
+	color: #fff
 }
 
-
+#comunica-sparql h2 {
+	color: #fff
+}

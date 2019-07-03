@@ -173,8 +173,8 @@
 
 	<div class="slide" id="network-6">
 		<h2>
-			Aggregators’ main responsibility becomes<br />
-			fostering a network between nodes.
+			Decentralised Web networks are between nodes.<br />
+			Aggregators become facilitator.
 		</h2>
 		<figure class="cover width margin">
 			<img src="images/network-6.svg" alt="" />
@@ -291,26 +291,6 @@
 		</figure>
 	</div>
 
-	<div class="slide" id="open">
-		<h2>
-			Anyone can build or host<br />
-			software for Solid.
-		</h2>
-		<ul>
-			<li class="next">
-				a server at home and/or<br />
-				at your workplace
-			</li>
-			<li class="next">
-				rent server space
-			</li>
-			<li class="next">
-				use one of the<br />
-				free community servers
-			</li>
-		</ul>
-	</div>
-
 	<div class="slide" id="server">
 		<h2>
 			The Solid server acts as a data pod<br />
@@ -414,6 +394,45 @@
 		<figure class="cover width margin">
 			<img src="images/dbpediaarch.svg" alt="" />
 		</figure>
+	</div>
+
+	<div class="slide" id="current-state">
+		<h2>
+			The Solid server and several apps exist<br>
+			and are usable for developers.
+		</h2>
+		<ul>
+			<li>
+				<a href="https://github.com/solid/node-solid-server/">Solid server</a>
+				<ul class="next">
+					<li>store your data online with access control</li>
+					<li>
+						free storage at
+						<a href="https://solid.community/">solid.community</a>
+						and
+						<a href="https://inrupt.net/">inrupt.net</a>
+					</li>
+				</ul>
+			</li>
+			<li>
+				apps
+				<ul class="next inline">
+					<li><a href="https://github.com/linkeddata/mashlib">data browser</a></li>
+					<li>contacts</li>
+					<li>photos</li>
+					<li>meeting organizer</li>
+					<li>…</li>
+				</ul>
+			</li>
+			<li>
+				libraries
+				<ul class="next inline">
+					<li><a href="https://github.com/solid/solid-auth-client">authentication</a></li>
+					<li><a href="https://github.com/linkeddata/rdflib.js/">data processing</a></li>
+					<li>…</li>
+				</ul>
+			</li>
+		</ul>
 	</div>
 
 	<div class="toc slide" id="toc">
@@ -585,25 +604,39 @@
 			</li>
 			<li class="next">
 				Handles <em>multiple query languages</em>
-				<ul><li>SPARQL, GraphQL-LD, LDFlex...</li></ul>
+				<ul>
+					<li>SPARQL, GraphQL-LD, LDFlex...</li>
+				</ul>
 			</li>
 
 		</ul>
-		<p class="next"><em>Check out <a href="http://comunica.linkeddatafragments.org">http://comunica.linkeddatafragments.org</a> and <a href="http://query.linkeddatafragments.org">http://query.linkeddatafragments.org</a></em></p>
+		<p class="next"><em>Check out <a
+					href="http://comunica.linkeddatafragments.org">http://comunica.linkeddatafragments.org</a> and <a
+					href="http://query.linkeddatafragments.org">http://query.linkeddatafragments.org</a></em></p>
 		<figure class="place right bottom">
 			<img src="images/comunica_white.svg" width="150" height="150" alt="" />
 		</figure>
 
 	</div>
 
+	<div class="slide" id="queries">
+		<h2>
+			When clients do not bind to HTTP requests,<br />
+			APIs can evolve independently of app logic.
+		</h2>
+		<figure class="cover width margin">
+			<img src="images/query-based-interaction.svg" alt="" />
+		</figure>
+	</div>
+
 	<div class="slide" id="mess">
 
-			<figure class="cover height">
-				<img src="images/comunica.png" alt="[Screenshot comunica]">
-				
-			</figure>
-	
-		</div>
+		<figure class="cover height">
+			<img src="images/comunica.png" alt="[Screenshot comunica]">
+
+		</figure>
+
+	</div>
 
 	<div class="slide" id="apps">
 		<h2>
@@ -611,7 +644,7 @@
 		</h2>
 		<ul>
 			<li>
-				Centered around the flexible and maintainable<br> RDF Mapping language (RML).
+				A flexible and maintainable RDF Mapping language (RML).
 				<ul>
 					<li>
 						Declarative (in RDF) and reusable mapping documents
@@ -620,29 +653,33 @@
 						Extensible towards <em>new data sources</em> and <em>transformation functions</em>.
 					</li>
 				</ul>
-		
-		</li>
-		<li class="next">
-			Toolsuite to facilitate setting up data pods
-			<ul>
+
+			</li>
+			<li class="next">
+				Toolsuite to facilitate setting up data pods
+				<ul>
 					<li>
 						Static and streaming data (RML Mapper & Streamer)
 					</li>
 					<li>
-						YAML-based shorthand syntax (YARRML) and graphical interface (RML Editor)
+						YAML-based shorthand syntax (YARRML)
 					</li>
+					<li>Graphical interface (RML Editor)</li>
 					<li>
 						Data quality assessment (Validatrr)
-						</li>
+					</li>
 				</ul>
 
-		</li>
-		
-	</ul>
-	<p><em>Check out <a href="http://rml.io">http://rml.io</a></em></p>
+			</li>
+
+		</ul>
+		<p><em>Check out <a href="http://rml.io">http://rml.io</a></em></p>
+		<figure class="place right bottom">
+			<img src="images/rml.png" width="150" height="150" alt="" />
+		</figure>
 	</div>
 
-	
+
 
 	<!-- <div class="cover slide" id="react">
 		<h2>
@@ -677,83 +714,49 @@
 	</div>
 
 	<div class="slide" id="cache">
-			<h2>
-				Decentralization needs replication<br />
-				for realistic performance.
-			</h2>
-			<figure class="cover width margin">
-				<img src="images/queries-network.svg" alt="" />
-			</figure>
-		</div>
-	
-		<div class="slide" id="cache">
-			<h2>
-				Decentralization needs <em>service hubs</em><br />
-				for realistic <em>adoption</em>.
-			</h2>
-			<figure class="cover width margin">
-				<img src="images/queries-network.svg" alt="" />
-			</figure>
-		</div>
-	
-	<div class="slide" id="apps">
-			<h2>
-				Main point of the presentation<br />
-				Something wikidata
-			</h2>
-
-		</div>
-		<div class="slide" id="network-6">
-				<h2>
-					One Wikidata can facilitate smaller Wikidata's.<br>
-					Solid makes an excellent glue.
-				</h2>
-				<figure class="cover width margin">
-					<img src="images/network-wikidata.svg" alt="" />
-				</figure>
-			</div>
-
-	<!-- <div class="slide" id="multiple-backends">
 		<h2>
-			Decentralized apps have many back-ends. Back-ends work with many
-			apps.
+			Decentralization needs <em>service hubs</em><br />
+			for realistic <em>adoption</em> and <em>performance</em>.
 		</h2>
 		<figure class="cover width margin">
-			<img src="images/multiple-backends.svg" alt="" />
+			<img src="images/queries-network.svg" alt="" />
 		</figure>
 	</div>
-
-	<div class="slide" id="requests">
-		<h2>
-			The current approach to building apps<br />
-			does not play well with decentralization.
-		</h2>
-		<figure class="cover width margin">
-			<img src="images/request-based-interaction.svg" alt="" />
-		</figure>
-	</div>
-
-	<div class="slide" id="queries">
-		<h2>
-			When clients do not bind to HTTP requests,<br />
-			APIs can evolve independently of app logic.
-		</h2>
-		<figure class="cover width margin">
-			<img src="images/query-based-interaction.svg" alt="" />
-		</figure>
-	</div>
-
-	
 
 	<div class="slide" id="network-6">
-			<h2>
-				Aggregators’ main responsibility becomes<br />
-				fostering a network between nodes.
-			</h2>
-			<figure class="cover width margin">
-				<img src="images/network-6.svg" alt="" />
-			</figure>
-		</div> -->
+		<h2>
+			One Wikidata can facilitate smaller Wikidata's.<br>
+			Solid makes an excellent glue.
+		</h2>
+		<figure class="cover width margin">
+			<img src="images/network-wikidata.svg" alt="" />
+		</figure>
+	</div>
+
+	<div class="text slide" id="summary">
+		<p>
+			<span class="highlight">Solid is about choice in alternatives.</span>
+		</p>
+		<p><span class="highlight">Rethink how you organise your network.<br>Rethink app and service hub
+				development.</span>
+		</p>
+
+
+		<p><span class="highlight">Build with our facilitating technologies (they're free!).</span>
+			<ul>
+				<li><span class="highlight">RML, Linked Data Fragments, LDFlex, Comunica, and many more.</span></li>
+				</li>
+			</ul>
+		</p>
+		<p><span class="highlight">Join the Solid community at <a href="https://solid.mit.edu/">https://solid.mit.edu</a></span></p>
+
+		<figure class="cover width">
+			<img src="images/kelly-sikkema-Z9AU36chmQI-unsplash.jpg" alt="" />
+			<figcaption>
+				Photo by Kelly Sikkema on Unsplash
+			</figcaption>
+		</figure>
+	</div>
 
 	<div class="progress"></div>
 	<footer>
